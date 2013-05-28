@@ -33,7 +33,7 @@ var path = require("path");
 
 */
 
-/* organel | 
+/* organel | BundleCode
 
 Basic Organelle which wraps browserify v2.x.x 
 

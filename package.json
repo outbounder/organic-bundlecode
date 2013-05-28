@@ -1,0 +1,32 @@
+{
+  "name": "organic-bundlecode",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node ./tests/"
+  },
+  "dependencies": {
+    "organic": "0.0.11",
+    "underscore": "1.4.4",
+
+    "browser-pack": "~0.8.0",
+    "shell-quote": "~0.0.1",
+    "through": "~2.2.0",
+    "duplexer": "~0.0.2",
+    "concat-stream": "~0.1.1",
+    "insert-module-globals": "~0.2.0",
+    "syntax-error": "~0.0.0",
+    "browser-resolve": "~0.1.1",
+    "inherits": "~1.0.0",
+    "JSONStream": "~0.4.3",
+    "umd": "~1.1.0",
+
+    "resolve": "~0.3.0",
+    "detective": "~2.1.1"
+  },
+  "devDependencies": {
+    "jasmine-node": "latest",
+    "shelljs": "latest"
+  },
+  "license": "MIT"
+}

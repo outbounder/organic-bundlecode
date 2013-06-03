@@ -7,8 +7,7 @@ var path = require("path");
 var browserify = require('./lib/Bundle');
 var through = require("through");
 
-var jsp = require("uglify-js").parser
-var pro = require("uglify-js").uglify
+var UglifyJS = require("uglify-js");
 
 var _ = require("underscore");
 var path = require("path");
@@ -126,12 +125,8 @@ module.exports = function BundleCode(plasma, config){
 
       cache[target] = src;
 
-      if(config.uglify) {
-        ast = jsp.parse(cache[target])
-        ast = pro.ast_mangle(ast)
-        ast = pro.ast_squeeze(ast)
-        cache[target] = pro.gen_code(ast)
-      }
+      if(config.uglify)
+        cache[target] = UglifyJS.minify(cache[target], {fromString: true}).code;
       cache[target] = new Buffer(cache[target]);
       chemical.data = cache[target];
 

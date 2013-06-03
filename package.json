@@ -20,6 +20,7 @@
     "inherits": "~1.0.0",
     "JSONStream": "~0.4.3",
     "umd": "~1.1.0",
+    "uglify-js": "2.3.6",
 
     "resolve": "~0.3.0",
     "detective": "~2.1.1"
